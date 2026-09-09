@@ -1,0 +1,46 @@
+.header2 {
+  color: #333333
+}
+
+.nm {
+  color: red;
+  background-color: #bbbbbb;
+  border: 2px solid #333333;
+}
+
+.ccode {
+  color: rgb(3, 3, 110);
+  background-color: #bbbbbb;
+  padding: 20px;
+  margin: 5px 0;
+  border-radius: 2px;
+  border: 2px solid #333333;
+  font-weight: bold;
+  width: 530px
+}
+
+.strikethrough {
+  text-decoration-line: line-through;
+}
+
+body {
+  font-family: sans-serif
+}
+
+h2 {
+  color: #777777;
+  font-style: italic;
+}
+
+footer {
+  color: #333333;
+  font-style: italic;
+}
+
+img {
+  width: 200px
+}
+
+p {
+  color: #333333
+}
