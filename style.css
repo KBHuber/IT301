@@ -1,21 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@font-face {
+  font-family: "Fixedsys Excelsior";
+  src: url("https://cdn.jsdelivr.net/npm/@south-paw/typeface-fixed-system-excelsior@1.0.0/files/fsex300.woff") format("woff"),
+    url("https://cdn.jsdelivr.net/npm/@south-paw/typeface-fixed-system-excelsior@1.0.0/files/fsex300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 .assignmentbox {
   padding: 20px;
   margin: 15px 0;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  box-shadow: 3px 3px #666666
+  background-color: #ffffff;
+  box-shadow: 4px 4px #000000;
+  border: 2px solid #000000;
+  border-radius: 0;
 }
 
-.homework {
-  border: 2px solid #ebde3d;
-  background-color: #eeeab0;
+.assignmentbox h2 {
+  margin: -20px -20px 20px -20px;
+  padding: 4px;
+  background-color: #000080;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  border-bottom: 2px solid #000000;
 }
 
-.lab {
-  border: 2px solid #7bb4e6;
-  background-color: #cbe4fd;
+.assignments {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 15px;
 }
 
 img {
@@ -23,19 +38,35 @@ img {
   height: auto;
 }
 
+.wallpaper {
+  display: block;
+  width: 100%;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  image-rendering: pixelated;
+}
+
 footer {
-  color:#666666;
+  color: #666666;
   text-decoration-line: none;
 }
 
-footer a {
+a {
   text-decoration-line: none;
 }
 
 body {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Fixedsys Excelsior", monospace;
+  font-size: 20px;
+  -webkit-font-smoothing: none;
+  background-color: #c0c0c0;
 }
 
 ol {
   list-style-type: decimal-leading-zero;
+}
+
+ul{
+  list-style: none;
+  padding-left:16px;
 }

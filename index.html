@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IT301 Labs and Projects</title>
+  <link rel="icon" type="image/png" href="images/king.png">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,34 +20,36 @@
       This site is not intended as a portfolio or reflection of development skills. </p>
   </header>
   <nav>
-    <h2>List of Labs and Homework</h2>
-    <ol>
+    <h2>Labs</h2>
+    <ul>
       <li><a href="#Lab01">Lab 01: Website Initial Commit</a></li>
       <li><a href="#Lab02">Lab 02: Semantics</a></li>
-      <li><a href="#HW01">HW 01: Github Workflow</a></li>
       <li><a href="#Lab03">Lab 03: Nested List Selector</a></li>
-      <li><a href="#HW02">HW 02: Practice with CSS</a></li>
       <li><a href="#Lab04">Lab 04: Style my Page</a></li>
-    </ol>
+    </ul>
+    <h2>Homework</h2>
+    <ul>
+      <li><a href="#HW01">HW 01: Github Workflow</a></li>
+      <li><a href="#HW02">HW 02: Practice with CSS</a></li>
+    </ul>
   </nav>
   <main>
 
-
-
-    <div>
-      <article id="Lab01" class="assignmentbox lab">
+    <div class="assignments">
+      <article id="Lab01" class="assignmentbox">
         <h2>
           Lab 01:
         </h2>
         <p>
-          Lab 01 consists of the initial site structure and commit, basic usage of tags such as <strong>strong</strong>,
+          Lab 01 consists of the initial site structure and commit, basic usage of tags such as
+          <strong>&lt;strong&gt;</strong>,
           and the addition of images such as the following.
         </p>
-        <img
-          src="https://static.wikia.nocookie.net/cartoons/images/e/ed/Profile_-_SpongeBob_SquarePants.png/revision/latest?cb=20240420115914"
-          alt="spongebob" referrerpolicy="no-referrer" class="img">
+        <img class="wallpaper" width="640" height="200"
+          alt="Chess pieces floating over a checkerboard, cropped from the Windows 3.0 chess wallpaper"
+          src="images/wallpaper.png">
       </article>
-      <article id="Lab02" class="assignmentbox lab">
+      <article id="Lab02" class="assignmentbox">
         <h2>
           Lab 02:
         </h2>
@@ -56,20 +59,32 @@
         </p>
         <p>
           The second piece of content is this short article about myself. I am a Junior year CS and IT double major
+          undergraduate
           student at JMU. I am an avid skier, and an active member of Boarderline Ski and Snowboard Club, Unix Users
           Group, and a competition member of Cyber Defense Club @ JMU. I work as a TA (Teaching Assistant) for IT333:
           Advanced Networking, and have worked for the past two semesters as a TA for IT240: Database Administration.
         </p>
       </article>
-      <article id="HW01" class="assignmentbox homework">
+      <article id="Lab03" class="assignmentbox">
+        <h2>Lab 03:</h2>
+        <p>
+          Lab 03 consists of using some basic css in an external stylesheet to style a nested list, it can be found <a
+            href="Lab03/styling_with_CSS.html"> here.</a>
+        </p>
+      </article>
+      <article id="Lab04" class="assignmentbox">
+        <h2>Lab 04:</h2>
+        <p>Lab 04 consists of applying some styling to my webpage, using an external css. The current styling of the
+          website exceeds what was required (and done) for this lab.</p>
+      </article>
+      <article id="HW01" class="assignmentbox">
         <h2>
-          HW 01:
+          Homework 01:
         </h2>
         <p>
           HW 01 consists of using git locally to create a branch, make these changes, merge back into main, before
-          pushing
-          back to github.
-          Followed by explaining the following in my own words, to demonstrate basic awareness of git. <br>
+          pushing back to github.
+          I then explain the following in my own words, to demonstrate basic awareness of git. <br>
           <strong> repo: </strong> a project folder with changes tracked in git <br>
           <strong> clone: </strong> making a full copy of an existing repo <br>
           <strong> branch: </strong> a version of the software, can be used for making changes off main<br>
@@ -80,15 +95,8 @@
           <strong> merge: </strong> combining commits from one branch into another <br>
         </p>
       </article>
-      <article id="Lab03" class="assignmentbox lab">
-        <h2>Lab 03:</h2>
-        <p>
-          Lab 03 consists of using some basic css in an external stylesheet to style a nested list, it can be found <a
-            href="Lab03/styling_with_CSS.html"> here.</a>
-        </p>
-      </article>
-      <article id="HW02" class="assignmentbox homework" style="display: none;">
-        <h2>HW 02:</h2>
+      <article id="HW02" class="assignmentbox">
+        <h2>Homework 02:</h2>
         <p>HW 02 consists of more practice with css, made up of the three following tasks </p>
         <ol>
           <li><a href="HW02/task1.html">Task 1</a> consists of recreating a deeply nested grocery list from a
@@ -101,10 +109,6 @@
           <li><a href="HW02/task3.html">Task 3</a> consists of recreating the styling and structure of a website from a
             screenshot and provided plaintext.</li>
         </ol>
-      </article>
-      <article id="Lab04" class="assignmentbox lab">
-        <h2>Lab 04:</h2>
-        <p>Lab 04 consists of applying some styling to my webpage, using an external CSS. </p>
       </article>
     </div>
 
