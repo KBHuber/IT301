@@ -1,34 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 .assignmentbox {
-
-
-  /* 2. Space inside the box (stops text from hugging the line) */
   padding: 20px;
-
-  /* 3. Space outside the box (pushes other elements away) */
   margin: 15px 0;
-
-  /* 4. Optional: Rounds the sharp corners */
   border-radius: 8px;
-
-  /* Optional: Gives the box a background color */
   background-color: #f9f9f9;
+  box-shadow: 3px 3px #666666
 }
 
 .homework {
-  /* 1. The Box Border (thickness, style, color) */
   border: 2px solid #ebde3d;
-  /* Optional: Gives the box a background color */
   background-color: #eeeab0;
 }
 
 .lab {
-  /* 1. The Box Border (thickness, style, color) */
   border: 2px solid #7bb4e6;
-  /* Optional: Gives the box a background color */
   background-color: #cbe4fd;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+footer {
+  color:#666666;
+  text-decoration-line: none;
+}
+
+footer a {
+  text-decoration-line: none;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
 }
