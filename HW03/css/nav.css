@@ -1,0 +1,25 @@
+/* ====== NAV.CSS ====== */
+/* Add style for step#3 here*/
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  text-align: center;
+  padding: 6px 0;
+  background: #F0BDCB;
+  border-bottom: 3px solid #FFE4E1;
+  border-radius: 4px;
+}
+
+nav li:last-child {
+  border-bottom: none;
+}
+
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #3E1E68;
+}

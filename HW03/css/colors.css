@@ -1,0 +1,39 @@
+/* ====== COLORS.CSS ====== */
+/* Add style for step#2 here*/
+
+body {
+  background: #FFE4E1;
+  color: #222222;
+}
+
+header {
+  background: #3E1E68;
+  color: #FFFFFF;
+  border-bottom: 4px solid #E45A92;
+}
+
+a {
+  color: #5A189A;
+}
+
+main {
+  color: #222222;
+}
+
+section {
+  background: #E8DFF5;
+  border: 2px solid #C3B1E1;
+  border-radius: 10px;
+}
+
+footer {
+  background: #C3B1E1;
+  color: #3E1E68;
+  border-top: 4px solid #E45A92;
+}
+
+footer nav {
+  background: #D9AED3;
+  border: 2px solid #C3B1E1;
+  border-radius: 6px;
+}
