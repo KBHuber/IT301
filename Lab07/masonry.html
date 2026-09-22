@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masonry</title>
+</head>
+<style>
+  body{
+    margin:0
+  }
+
+  .flexparent {
+    display: flex;
+    gap: 10px;
+    justify-content:flex-start;
+    height:100vh;
+  }
+
+  #leftcolumn {
+    display:flex;
+    height: auto;
+    background-color: orange;
+    min-width:30px;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  #flexphotos {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    gap:5px;
+    flex:1 1 0;
+    overflow-y:auto;
+  }
+
+  .photo {
+    display: flex;
+    flex-grow:1;
+    height:100px;
+    min-width:0;
+  }
+
+  #trash{
+    margin-top:auto;
+  }
+
+
+</style>
+
+<body>
+  <div class="flexparent">
+    <div id="leftcolumn">
+        <p>&#x1F4F7;</p>
+        <p>&#x1F5C4;&#xfe0f;</p>
+        <p>&#x2764;&#xfe0f;</p>
+        <p id = "trash">&#x1F5D1;&#xfe0f;</p>
+    </div>
+    <div id=flexphotos>
+      <img class=photo alt="random" src="https://picsum.photos/120/100">
+      <img class=photo alt="random" src="https://picsum.photos/130/100">
+      <img class=photo alt="random" src="https://picsum.photos/220/100">
+      <img class=photo alt="random" src="https://picsum.photos/230/100">
+      <img class=photo alt="random" src="https://picsum.photos/150/100">
+      <img class=photo alt="random" src="https://picsum.photos/160/100">
+      <img class=photo alt="random" src="https://picsum.photos/110/100">
+      <img class=photo alt="random" src="https://picsum.photos/400/100">
+      <img class=photo alt="random" src="https://picsum.photos/300/100">
+      <img class=photo alt="random" src="https://picsum.photos/200/100">
+      <img class=photo alt="random" src="https://picsum.photos/225/100">
+      <img class=photo alt="random" src="https://picsum.photos/260/100">
+      <img class=photo alt="random" src="https://picsum.photos/165/100">
+      <img class=photo alt="random" src="https://picsum.photos/380/100">
+      <img class=photo alt="random" src="https://picsum.photos/385/100">
+      <img class=photo alt="random" src="https://picsum.photos/135/100">
+      <img class=photo alt="random" src="https://picsum.photos/275/100">
+      <img class=photo alt="random" src="https://picsum.photos/375/100">
+      <img class=photo alt="random" src="https://picsum.photos/320/100">
+      <img class=photo alt="random" src="https://picsum.photos/100/100">
+      <img class=photo alt="random" src="https://picsum.photos/327/100">
+      <img class=photo alt="random" src="https://picsum.photos/105/100">
+      <img class=photo alt="random" src="https://picsum.photos/115/100">
+      <img class=photo alt="random" src="https://picsum.photos/125/100">
+      <img class=photo alt="random" src="https://picsum.photos/145/100">
+      <img class=photo alt="random" src="https://picsum.photos/175/100">
+      <img class=photo alt="random" src="https://picsum.photos/185/100">
+      <img class=photo alt="random" src="https://picsum.photos/195/100">
+      <img class=photo alt="random" src="https://picsum.photos/205/100">
+      <img class=photo alt="random" src="https://picsum.photos/215/100">
+      <img class=photo alt="random" src="https://picsum.photos/235/100">
+      <img class=photo alt="random" src="https://picsum.photos/245/100">
+      <img class=photo alt="random" src="https://picsum.photos/255/100">
+      <img class=photo alt="random" src="https://picsum.photos/265/100">
+      <img class=photo alt="random" src="https://picsum.photos/285/100">
+      <img class=photo alt="random" src="https://picsum.photos/295/100">
+      <img class=photo alt="random" src="https://picsum.photos/305/100">
+      <img class=photo alt="random" src="https://picsum.photos/315/100">
+      <img class=photo alt="random" src="https://picsum.photos/335/100">
+      <img class=photo alt="random" src="https://picsum.photos/355/100">
+      <img class=photo alt="random" src="https://picsum.photos/395/100">
+    </div>
+  </div>
+</body>
+
+</html>
