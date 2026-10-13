@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var question = "What is the subtotal before tax and tip?";
+    var subtotal = Number(prompt(question));
+    while (isNaN(subtotal) || subtotal <= 0) {
+      switch (true) {
+        case isNaN(subtotal): subtotal = Number(prompt(question + " please enter a number")); break;
+        case subtotal == 0: subtotal = Number(prompt(question + " please enter a nonzero number")); break;
+        case subtotal < 0: subtotal = Number(prompt(question + " please enter a positive number")); break;
+      }
+    }
+    const tip = (0.1 * subtotal);
+    console.log(`For a bill of $${subtotal}, the tip is $ ${tip}`);
+    document.write(`For a bill of $${subtotal}, the tip is $${tip}`);
+
+  </script>
+</body>
+</html>

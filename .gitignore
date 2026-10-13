@@ -6,4 +6,5 @@ Thumbs.db
 .idea/
 xssexample.html
 icons/
-test.html
+test*
+exam*
