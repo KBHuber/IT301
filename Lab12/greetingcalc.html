@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Greeting And Calculator</h1>
+  <form action='#'>
+    <label for="name">What is your name</label>
+    <input type="text" id="name">
+    <button type="button" id="submit">Submit</button>
+    <textarea readonly id="greeting"></textarea>
+
+    <p>enter two numbers and select your operation</p>
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <p>Select your operation:</p>
+    <input type="radio" name="operation" value="add">+<br>
+    <input type="radio" name="operation" value="sub">- <br>
+    <input type="radio" name="operation" value="mul">x<br>
+    <input type="radio" name="operation" value="div">/<br>
+    <button type="button" id="calc">Calculate!</button>
+    <textarea readonly id="result"></textarea>
+
+    <button type="reset">Reset</button>
+  </form>
+
+  <script>
+    const name = document.getElementById("name");
+    document.getElementById("submit").addEventListener('click', function () {
+      greeting.value = `Hello ${name.value}, welcome to the calculator`;
+    });
+
+    document.getElementById("calc").addEventListener('click', function () {
+      const num1 = Number(document.getElementById("num1").value);
+      const num2 = Number(document.getElementById("num2").value);
+      operation = document.querySelector('[name = operation]:checked');
+      switch (operation.value) {
+        case 'add':
+          result.value = `${num1 + num2}`;
+          break;
+        case 'sub':
+          result.value = `${num1 - num2}`;
+          break;
+        case 'mul':
+          result.value = `${num1 * num2}`;
+          break;
+        case 'div':
+          result.value = `${num1 / num2}`;
+          break;
+      }
+
+    });
+
+
+
+
+  </script>
+  </form>
+</body>
+
+</html>
