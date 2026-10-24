@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Personal Site</title>
+  <link rel="stylesheet" href="css/p1style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Saab 9000 Aero: My weird 90's sports car</h1>
+    <nav>
+      <ul>
+        <li><a href=index.html>Home</a></li>
+        <li><a href=school.html>School</a></li>
+        <li><a href=research.html>Extracurriculars</a></li>
+        <li><a href=skiing.html>Skiing</a></li>
+        <li><a href=car.html class="here">My Car</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class=card>
+
+      <h2>Saab Facts</h2>
+      <img src="images/car.jpeg" alt="My 1997 Saab 9000 Aero" referrerpolicy="no-referrer">
+      <p>
+        My car which I drive everywhere is a <span class="cardtitle">1997 Saab 9000 Aero</span>, a very rare sports car
+        from the 90's. It was built by defense and aerospace company Saab, who at the time also made cars, to compete
+        with the other large european luxury sports sedans of its time, such as the BMW 5 series, Audi A6, Jaguar XJ,
+        and the Mercedes-Benz E-Class. It held the record of fastest front wheel drive production car from 1993-1999,
+        dethroned only by Saab's next model, the 9-3. Early advertising talked about the car's ability to out-accelerate
+        a Ferrari Testarossa and a Porsche 911 Carrera in the 50-70 mph range, which is useful for passing on the
+        interstate.
+      </p>
+    </div>
+    <form action='#' id="compare" class=card>
+      <h2>See how your car compares!</h2>
+      <label for="name">Year Make and Model</label>
+      <input type="text" id="name" required>
+      <label for="speed">Top Speed (mph):</label>
+      <input type="number" id="speed" required>
+      <label for="acc">0 to 60 Time (s):</label>
+      <input type="number" id="acc" step="any" required>
+      <label for="hp">Horsepower:</label>
+      <input type="number" id="hp" required>
+      <label for="disp">Displacement (l):</label>
+      <input type="number" id="disp" step="any" required>
+      <label for="weight">Curb Weight (lbs):</label>
+      <input type="number" id="weight" required>
+      <label for="mpg">Mileage (mpg):</label>
+      <input type="number" id="mpg" required>
+      <button type="submit" id="submit">Compare!</button>
+    </form>
+    <p id="result" class=card></p>
+  </main>
+  <footer>
+    You can contact me on <a href="https://www.linkedin.com/in/kb-huber/">Linkedin</a>, or by sending me an e-mail at <a
+      href="mailto:huber2kb@dukes.jmu.edu">huber2kb@dukes.jmu.edu</a>. You can also view my (mostly inactive) <a
+      href="https://github.com/KBHuber">GitHub.</a>
+  </footer>
+  <script>
+
+    // 1997 Saab 9000 Aero specs
+    const aero = { speed: 149, acc: 6.5, hp: 225, disp: 2.3, weight: 3197, mpg: 21 };
+
+    // helper
+    function compare(mine, theirs, more, less) {
+      if (mine > theirs) {
+        return `${more} than`;
+      } else if (mine < theirs) {
+        return `${less} than`;
+      }
+      return 'the same as';
+    }
+
+    document.getElementById("compare").addEventListener('submit', function (event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value;
+      const speed = Number(document.getElementById("speed").value);
+      const acc = Number(document.getElementById("acc").value);
+      const hp = Number(document.getElementById("hp").value);
+      const disp = Number(document.getElementById("disp").value);
+      const weight = document.getElementById("weight").value;
+      const mpg = Number(document.getElementById("mpg").value);
+
+      let text = `Your ${name}'s top speed of ${speed} mph is ${compare(speed, aero.speed, 'faster', 'slower')} the Aero's ${aero.speed} mph, `;
+      text += `your 0 to 60 time of ${acc} seconds is ${compare(acc, aero.acc, 'slower', 'quicker')} the Aero's ${aero.acc} seconds, `;
+      text += `your ${hp} hp is ${compare(hp, aero.hp, 'more', 'less')} the Aero's ${aero.hp} hp, `;
+      text += `your ${disp} liter engine is ${compare(disp, aero.disp, 'bigger', 'smaller')} the Aero's ${aero.disp} liter turbo four, `;
+      text += `your curb weight of ${weight} lbs is ${compare(Number(weight), aero.weight, 'heavier', 'lighter')} the Aero's ${aero.weight} lbs, `;
+      text += `and your ${mpg} mpg is ${compare(mpg, aero.mpg, 'better', 'worse')} the Aero's ${aero.mpg} mpg.`;
+      document.getElementById("result").textContent = text;
+    });
+  </script>
+</body>
+
+</html>
