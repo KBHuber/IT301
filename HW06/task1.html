@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Math Fun Game</title>
+  <style>
+  body {
+    background-color: #0d0d0d;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .gameBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1c1c1c;
+    padding: 30px 30px;
+    border-radius: 20px;
+    width: 340px;
+    box-shadow: 0 0 30px rgba(255, 165, 0, 0.1);
+    gap: 20px;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .gameBox:hover {
+    box-shadow: 0 0 40px rgba(255, 165, 0, 0.2);
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #ffa500;
+  }
+
+  #diceBtn,
+  #submit {
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  #diceBtn {
+    background-color: #ffa500;
+    color: #000;
+    border: none;
+  }
+
+  #diceBtn:hover {
+    background-color: #ff8c00;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  #problem {
+    color: #ffa500;
+    font-size: 1.3rem;
+    text-align: center;
+    min-height: 30px;
+  }
+
+  #userAns {
+    width: 80%;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: 1px solid #666;
+    background-color: #2a2a2a;
+    color: white;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+
+  #userAns:focus {
+    border-color: #ffa500;
+  }
+
+  #submit {
+    background-color: #444;
+    color: #fff;
+
+  }
+  form{
+    display:flex;
+    flex-direction:column;
+    align-items:center; 
+    gap:50px;
+  }
+
+  #submit:hover {
+    background-color: #666;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  #feedback {
+    font-size: 1rem;
+    min-height: 20px;
+    margin-top: 10px;
+    color: #0f0;
+  }
+  #user{
+    display:none;
+  }
+ 
+  </style>
+</head>
+<body>
+<div class="gameBox">
+  <h2>Math Fun</h2>
+  
+  <button class="orange-btn" id="diceBtn">🎲 Generate</button>
+
+  <div class="problem" id="problem">Press "Generate" to start</div>
+
+  <form onsubmit="return false;">
+    <label for="userAns" id="user">Your Answer</label>
+    <input type="number" id="userAns" placeholder="?" required />
+
+    <button id="submit">✅ Submit</button>
+  </form>
+
+  <div class="feedback" id="feedback"></div>
+  <div id="score"></div>
+</div>
+
+
+  <script>
+    const problem = document.getElementById('problem');
+    const userAns = document.getElementById('userAns');
+    const feedback = document.getElementById('feedback');
+    const score = document.getElementById('score');
+
+    let num1 = 0;
+    let num2 = 0;
+    let correct = 0;
+    let wrong = 0;
+
+    function updateScore() {
+      score.textContent = `${correct} ✅ | ${wrong} ❌`;
+    }
+
+    document.getElementById('diceBtn').addEventListener('click', function () {
+      num1 = Math.floor(Math.random() * 100) + 1;
+      num2 = Math.floor(Math.random() * 100) + 1;
+      problem.textContent = `${num1} + ${num2} =`;
+      userAns.value = '';
+      feedback.textContent = '';
+    });
+
+    document.getElementById('submit').addEventListener('click', function () {
+      if (num1 === 0 || userAns.value === '') {
+        return;
+      }
+
+      const answer = num1 + num2;
+      if (Number(userAns.value) === answer) {
+        feedback.textContent = '✅ Correct!';
+        correct++;
+      } else {
+        feedback.textContent = `❌ Wrong! The correct answer is: ${answer}`;
+        wrong++;
+      }
+      updateScore();
+    });
+
+    updateScore();
+  </script>
+</body>
+</html>
