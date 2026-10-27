@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <script>
+
+    /*
+    // create
+    const p = new Promise((resolve, reject) => {
+      const grade = 50;
+      if (grade > 50) { resolve('pass the class') }
+      else { reject('fail the class') }
+    });
+    console.log(p)
+    // consume 
+
+    const checkgrade = async () => {
+      try {
+        const result = await p;
+        console.log(result);
+      } catch (reason) { console.log(reason) }
+    }
+    checkgrade()
+    */
+    let div = document.createElement('div');
+    let img = document.createElement('img');
+    let name = document.createElement('p');
+    let info = document.createElement('p');
+    let form = document.createElement('form')
+    let bttn = document.createElement('button')
+    bttn.textContent = 'Generate Profile'
+    form.appendChild(bttn)
+    div.appendChild(img);
+    div.appendChild(name);
+    div.appendChild(info);
+    div.appendChild(form);
+    document.body.appendChild(div);
+
+    div.style.backgroundColor = 'gainsboro';
+    div.style.width = '300px';
+    div.style.display = 'flex';
+    div.style.flexDirection = 'column'
+    div.style.padding = '10px'
+    div.style.alignItems = 'center';
+    div.style.alignContent = 'center';
+    div.style.border = '2px gray solid'
+    div.style.borderRadius = '10px'
+
+    const profile = async () => {
+      try {
+        let a = await fetch('https://randomuser.me/api')
+        a = await a.json()
+        a = a.results[0]
+        console.log(a)
+        img.src = a.picture.large
+        name.textContent = `${a.name.title} ${a.name.first} ${a.name.last}`
+        info.textContent = `${a.email} | ${a.phone}`
+      } catch (reason) { console.log(reason) }
+    }
+    profile()
+  </script>
+
+</body>
+
+</html>
