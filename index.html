@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Labs, homework, and projects for IT 301: Web Technologies at JMU, Fall 2026.">
   <title>IT301 Labs and Projects</title>
   <link rel="icon" type="image/png" href="images/king.png">
   <link rel="stylesheet" href="style.css">
@@ -12,262 +13,321 @@
 
 <body>
 
-  <header>
-    <h1>
-      IT301 Labs and Projects
-    </h1>
-    <p>This website is an evolving project for the Fall 2026 semester of <i>IT 301: Web Technologies</i>, a required
-      course at <a href=https://www.jmu.edu/index.shtml>JMU.</a> My course repo can be found <a
-        href="https://github.com/KBHuber/IT301">here.</a><br>
-      This site is not intended as a portfolio or reflection of development skills. </p>
+  <header class="window">
+    <h1 class="titlebar">IT301 Labs and Projects</h1>
+    <p>This website is an evolving project for the Fall 2026 semester of <cite>IT 301: Web Technologies</cite>, a
+      required course at <a href="https://www.jmu.edu/index.shtml">JMU</a>. You can find
+      <a href="https://github.com/KBHuber/IT301">my course repo on GitHub</a>.</p>
+    <p>This site is not intended as a portfolio or reflection of development skills.</p>
   </header>
 
-  <nav>
-    <h2>Labs</h2>
-    <ul>
-      <li><a href="#Lab01">Lab 01: IT301 Labs Webpage</a></li>
-      <li><a href="#Lab02">Lab 02: Add Semantics to Your Website</a></li>
-      <li><a href="#Lab03">Lab 03: Nested Lists Selector</a></li>
-      <li><a href="#Lab04">Lab 04: Style my Page</a></li>
-      <li><a href="#Lab05">Lab 05: Box Model</a></li>
-      <li><a href="#Lab06">Lab 06: Flex Box</a></li>
-      <li><a href="#Lab07">Lab 07: Masonry</a></li>
-      <li><a href="#Lab08">Lab 08: Position</a></li>
-      <li><a href="#Lab09">Lab 09: Media Query</a></li>
-      <li><a href="#Lab10">Lab 10: Tip Calculator</a></li>
-      <li><a href="#Lab11">Lab 11: Mouse Events</a></li>
-      <li><a href="#Lab12">Lab 12: Greeting and Calculator</a></li>
-      <li><a href="#Lab13">Lab 13: Arrays and Objects</a></li>
-      <li><a href="#Lab14">Lab 14: API</a></li>
-      <li><a href="#Lab15">Lab 15: Review</a></li>
-      <li><a href="#Lab16">Lab 16: Forms and Password Real-Time Validation</a></li>
-    </ul>
-    <h2>Homework</h2>
-    <ul>
-      <li><a href="#HW01">HW 01: Github Workflow</a></li>
-      <li><a href="#HW02">HW 02: Practice with CSS</a></li>
-      <li><a href="#HW03">HW 03: Box Model</a></li>
-      <li><a href="#HW04">HW 04: Flexbox</a></li>
-      <li><a href="#HW05">HW 05: Media Query</a></li>
-      <li><a href="#HW06">HW 06: DOM, Arrays and Objects</a></li>
-    </ul>
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="#P01">Project 01: Static Webpage</a></li>
-    </ul>
+  <nav class="window" aria-label="Assignments">
+    <h2 class="titlebar">Assignments</h2>
+    <div class="listbox">
+      <h3 class="labs">Labs</h3>
+      <ul>
+        <li><a href="#Lab01">Lab 01: IT301 Labs Webpage</a></li>
+        <li><a href="#Lab02">Lab 02: Add Semantics to Your Website</a></li>
+        <li><a href="#Lab03">Lab 03: Nested Lists Selector</a></li>
+        <li><a href="#Lab04">Lab 04: Style my Page</a></li>
+        <li><a href="#Lab05">Lab 05: Box Model</a></li>
+        <li><a href="#Lab06">Lab 06: Flex Box</a></li>
+        <li><a href="#Lab07">Lab 07: Masonry</a></li>
+        <li><a href="#Lab08">Lab 08: Position</a></li>
+        <li><a href="#Lab09">Lab 09: Media Query</a></li>
+        <li><a href="#Lab10">Lab 10: Tip Calculator</a></li>
+        <li><a href="#Lab11">Lab 11: Mouse Events</a></li>
+        <li><a href="#Lab12">Lab 12: Greeting and Calculator</a></li>
+        <li><a href="#Lab13">Lab 13: Arrays and Objects</a></li>
+        <li><a href="#Lab14">Lab 14: API</a></li>
+        <li><a href="#Lab15">Lab 15: Review</a></li>
+        <li><a href="#Lab16">Lab 16: Forms and Password Real-Time Validation</a></li>
+      </ul>
+      <h3 class="homework">Homework</h3>
+      <ul>
+        <li><a href="#HW01">HW 01: Github Workflow</a></li>
+        <li><a href="#HW02">HW 02: Practice with CSS</a></li>
+        <li><a href="#HW03">HW 03: Box Model</a></li>
+        <li><a href="#HW04">HW 04: Flexbox</a></li>
+        <li><a href="#HW05">HW 05: Media Query</a></li>
+        <li><a href="#HW06">HW 06: DOM, Arrays and Objects</a></li>
+      </ul>
+      <h3 class="projects">Projects</h3>
+      <ul>
+        <li><a href="#P01">Project 01: Static Webpage</a></li>
+      </ul>
+    </div>
   </nav>
 
   <main>
-    <div class="assignments">
-      <article id="Lab01" class="assignmentbox">
-        <h2>
-          Lab 01:
-        </h2>
-        <p>
-          Lab 01 consists of the initial site structure and commit, basic usage of tags such as
-          <strong>&lt;strong&gt;</strong>,
-          and the addition of images such as the following.
-        </p>
-        <img class="wallpaper" width="640" height="200" alt="Windows 3.0 Chess Wallpaper" src="images/wallpaper.png">
-      </article>
-      <article id="Lab02" class="assignmentbox">
-        <h2>
-          Lab 02:
-        </h2>
-        <p>
-          Lab 02 consists of the addition of semantic tags to the site, as well as the addition of two paragraphs.
-          This is the first paragraph, which explains what is done in this lab.
-        </p>
-        <p>
-          The second piece of content is this short article about myself. I am a Junior year CS and IT double major
-          undergraduate student at JMU. I am an avid skier, and an active member of Boarderline Ski and Snowboard Club,
-          Unix Users Group, and a competition member of Cyber Defense Club @ JMU. I work as a TA (Teaching Assistant)
-          for IT333: Advanced Networking, and have worked for the past two semesters as a TA for IT240: Database
-          Administration.
-        </p>
-      </article>
-      <article id="Lab03" class="assignmentbox">
-        <h2>Lab 03:</h2>
-        <p>
-          Lab 03 consists of using some basic css in an external stylesheet to style a given nested list.
-          You can see the page <a href="Lab03/styling_with_CSS.html"> here.</a>
-        </p>
-      </article>
-      <article id="Lab04" class="assignmentbox">
-        <h2>Lab 04:</h2>
-        <p>Lab 04 consists of applying some styling to my webpage, using an external css. The current styling of the
-          website exceeds what was required (and done) for this lab.
-          You can view the current stylesheet <a href=style.css>here.</a></p>
-      </article>
-      <article id="Lab05" class="assignmentbox">
-        <h2>Lab 05:</h2>
-        <p>Lab 05 consists of using what we learned about margins, borders, and padding to construct a letter. I chose
-          H,
-          which you can see <a href="Lab05/H.html">here</a></p>
-      </article>
-      <article id="Lab06" class="assignmentbox">
-        <h2>Lab 06:</h2>
-        <p>Lab 06 covers basic use of flexboxes. We create a page with three images, one larger in the middle, with
-          some spacing, and without any non-flex css properties. Although I was absent, I completed the lab afterwards
-          for some extra practice.
-          You can see the page <a href="Lab06/flexbox.html">here.</a></p>
-      </article>
-      <article id="Lab07" class="assignmentbox">
-        <h2>Lab 07:</h2>
-        <p>Lab 07 consists of more practice with flexboxes. We recreate a page according to a short video showcase. The
-          page consists of a side bar and random photos, which tile like masonry, with a fixed height and a flexible
-          width.
-          You can see the page <a href="Lab07/masonry.html">here.</a></p>
-      </article>
-      <article id="Lab08" class="assignmentbox">
-        <h2>Lab 08:</h2>
-        <p>Lab 08 consists of practice with position types and their usage, to modify a skeleton of a basic checkout
-          page with various positions and centering, to match some described behavior.
-          You can see the page <a href=Lab08/position.html>here.</a></p>
-      </article>
-      <article id="Lab09" class="assignmentbox">
-        <h2>Lab 09:</h2>
-        <p>Lab 09 consists of basic practice with media queries, given a webpage we must use media queries to make the
-          page behave as it does in a video.
-          You can see the page <a href=Lab09/mediaquery.html>here</a></p>
-      </article>
-      <article id="Lab10" class="assignmentbox">
-        <h2>Lab 10:</h2>
-        <p>Lab 10 consists of an intro to js, creating a basic tip calculator which tells the user to correct inputs.
-          You can see the page <a href=Lab10/js.html>here.</a></p>
-      </article>
-      <article id="Lab11" class="assignmentbox">
-        <h2>Lab 11:</h2>
-        <p>Lab 11 consists of an intro to mouse events, in which we add mouse events to make a button change colors and
-          text.
-          You can see the page <a href=Lab11/mouseevent.html>here.</a></p>
-      </article>
-      <article id="Lab12" class="assignmentbox">
-        <h2>Lab 12:</h2>
-        <p>Lab 12 consists of an intro to forms, in which we are asked to create a page which can greet you, and can do
-          basic arithmetic with two numbers.
-          You can see the page <a href=Lab12/greetingcalc.html>here.</a></p>
-      </article>
-      <article id="Lab13" class="assignmentbox">
-        <h2>Lab 13:</h2>
-        <p>Lab 13 consists of an intro to arrays and looping in javascript, where we are given a list and asked to use
-          different loops and functions to complete tasks.
-          You can see the raw js <a href=Lab13/arrays.js>here.</a></p>
-      </article>
-      <article id="Lab14" class="assignmentbox">
-        <h2>Lab 14:</h2>
-        <p>Lab 14 consists of an intro to async functions, promises, and fetching from api's. We fetch user data from an
-          example api, and display a simple profile on the page.
-          You can see the page <a href=Lab14/api.html>here.</a></p>
-      </article>
-      <article id="Lab15" class="assignmentbox">
-        <h2>Lab 15:</h2>
-        <p>Lab 15 consists of a review of API's, Asynchronous Functions, and general js. We fetch data, and filter,
-          access, and display the fetched data in multiple ways provided by the user.
-          You can see the page <a href=Lab15/review.html>here.</a></p>
-      </article>
-      <article id="Lab16" class="assignmentbox">
-        <h2>Lab 16:</h2>
-        <p>Lab 16 is review of forms, as well as an intro to RegEx, and classList toggles for conditional formatting. We
-          are asked to create a form which accepts a name, valid email, and password matching some basic requirements.
-          The password requirements indicate their completion with conditional coloring. The form, if all requirements
-          are completed, redirects you to a success page.
-          You can see the page <a href=Lab15/review.html>here.</a></p>
-      </article>
-      <article id="HW01" class="assignmentbox">
-        <h2>
-          Homework 01:
-        </h2>
-        <p>
-          HW 01 consists of using git locally to create a branch, make these changes, merge back into main, before
-          pushing back to github.
-          I then explain the following in my own words, to demonstrate basic awareness of git. <br>
-          <strong> repo: </strong> a project folder with changes tracked in git <br>
-          <strong> clone: </strong> making a full copy of an existing repo <br>
-          <strong> branch: </strong> a version of the software, can be used for making changes off main<br>
-          <strong> commit: </strong> a snapshot of changes <br>
-          <strong> push: </strong> moving local commits to a central repo; github <br>
-          <strong> pull: </strong> moving central repo commits to your local git <br>
-          <strong> pull request: </strong> a request to merge branches, subject to review <br>
-          <strong> merge: </strong> combining commits from one branch into another <br>
-        </p>
-      </article>
-      <article id="HW02" class="assignmentbox">
-        <h2>Homework 02:</h2>
-        <p>HW 02 consists of more practice with css, made up of the three following tasks </p>
-        <ul>
-          <li><a href="HW02/task1.html">Task 1</a> consists of recreating a deeply nested grocery list from a
-            screenshot.
-          </li>
-          <li><a href="HW02/debug1.html">Task 2</a> consists of debugging deliberately broken html, so that it passes
-            the
-            <a href="https://validator.w3.org/nu/#file">Nu html checker</a>
-          </li>
-          <li><a href="HW02/task3.html">Task 3</a> consists of recreating the styling and structure of a webpage from a
-            screenshot and provided plaintext.</li>
-        </ul>
-      </article>
-      <article id="HW03" class="assignmentbox">
-        <h2>Homework 03:</h2>
-        <p>HW 03 consists of more practice with css, made up of the two following tasks</p>
-        <ul>
-          <li><a href="HW03/index.html">Task 1</a> consists of styling a webpage according to a screenshot.</li>
-          <li><a href="HW03/letters.html">Task 2</a> consists of writing three letters with div boxes. I chose the word
-            HIT for it's letters made of straight lines</li>
-        </ul>
-      </article>
-      <article id="HW04" class="assignmentbox">
-        <h2>Homework 04:</h2>
-        <p>HW 04 consists of flexbox practice, made up of three tasks. </p>
-        <ul>
-          <li>Task 1 asks us to complete <a href="https://flexboxfroggy.com/">Flexbox Froggy</a>, a flexbox practice
-            game.</li>
-          <li><a href="HW04/task2.html">Task 2</a> consists of creating a pyramid of images that scales with page width
-          </li>
-          <li><a href="HW04/task3.html">Task 3</a> consists of styling a page showing the oscar winners, given some html
-            and a screenshot of the desired result</li>
-        </ul>
-      </article>
-      <article id="HW05" class="assignmentbox">
-        <h2>Homework 05:</h2>
-        <p>HW 05 consists of practice with CSS, and practice with media queries</p>
-        <ul>
-          <li><a href="HW05/task1.html">Task 1</a> asks us to create a pricing grid which matches a given photo.</li>
-          <li><a href="HW05/task2.html">Task 2</a> asks us to use media queries to make a given page match behavior
-            shown in a video
-          </li>
-        </ul>
-      </article>
-      <article id="HW06" class="assignmentbox">
-        <h2>Homework 06:</h2>
-        <p>HW 06 consists of practice with js and its arrays and objects.</p>
-        <ul>
-          <li><a href="HW06/task1.html">Task 1</a> asks us to add a script to a page to allow for a simple math game,
-            where two numbers are generated and a user is asked to add them.</li>
-          <li><a href="HW06/task2.html">Task 2</a> asks us to write some js on an html page, to log things in the
-            console and
-            manipulate an <a href=HW06/task2.js>array of objects</a>.
-          </li>
-        </ul>
-      </article>
-      <article id="P01" class="assignmentbox">
-        <h2>Project 1:</h2>
-        <p>In Project 1, we are asked to create a static website with five pages, with real content, rather than
-          examples or lorem ipsum. It must also have a consistent design language, and must carry a different structure
-          on each page, alongside some more specific requirements such as the use of some media queries, at least two
-          fonts, different positioning schemes, et cetera. I decided to make this site a personal site, with pages for
-          some of my interests and activites over the past couple of years. The site is written entirely by hand,
-          without the assistance of AI, and may contain mistakes, errors, and may not be entirely up to date. You can
-          view it <a href=Project01/index.html>here.</a></p>
-      </article>
-    </div>
+    <section id="labs" class="window group labs" aria-labelledby="labs-heading">
+      <details open>
+        <summary class="titlebar"><h2 id="labs-heading">Labs</h2></summary>
+        <div class="assignments">
+          <article id="Lab01" class="window assignmentbox">
+            <h3 class="titlebar">Lab 01: IT301 Labs Webpage</h3>
+            <p>
+              Lab 01 consists of the initial site structure and commit, basic usage of tags such as
+              <strong>&lt;strong&gt;</strong>,
+              and the addition of images such as the following.
+            </p>
+            <img class="wallpaper" width="640" height="200" alt="Windows 3.0 Chess Wallpaper" src="images/wallpaper.png">
+          </article>
+          <article id="Lab02" class="window assignmentbox">
+            <h3 class="titlebar">Lab 02: Add Semantics to Your Website</h3>
+            <p>
+              Lab 02 consists of the addition of semantic tags to the site, as well as the addition of two paragraphs.
+              This is the first paragraph, which explains what is done in this lab.
+            </p>
+            <p>
+              The second piece of content is this short article about myself. I am a Junior year CS and IT double major
+              undergraduate student at JMU. I am an avid skier, and an active member of Boarderline Ski and Snowboard
+              Club, Unix Users Group, and a competition member of Cyber Defense Club @ JMU. I work as a TA (Teaching
+              Assistant) for IT333: Advanced Networking, and have worked for the past two semesters as a TA for IT240:
+              Database Administration.
+            </p>
+          </article>
+          <article id="Lab03" class="window assignmentbox">
+            <h3 class="titlebar">Lab 03: Nested Lists Selector</h3>
+            <p>
+              Lab 03 consists of using some basic css in an external stylesheet to style a given nested list.
+              You can see <a href="Lab03/styling_with_CSS.html">the styled nested list</a>.
+            </p>
+          </article>
+          <article id="Lab04" class="window assignmentbox">
+            <h3 class="titlebar">Lab 04: Style my Page</h3>
+            <p>Lab 04 consists of applying some styling to my webpage, using an external css. The current styling of the
+              website exceeds what was required (and done) for this lab.
+              You can view <a href="style.css">the current stylesheet</a>.</p>
+          </article>
+          <article id="Lab05" class="window assignmentbox">
+            <h3 class="titlebar">Lab 05: Box Model</h3>
+            <p>Lab 05 consists of using what we learned about margins, borders, and padding to construct a letter. I
+              chose H, which you can see on <a href="Lab05/H.html">the box model letter page</a>.</p>
+          </article>
+          <article id="Lab06" class="window assignmentbox">
+            <h3 class="titlebar">Lab 06: Flex Box</h3>
+            <p>Lab 06 covers basic use of flexboxes. We create a page with three images, one larger in the middle, with
+              some spacing, and without any non-flex css properties. Although I was absent, I completed the lab
+              afterwards for some extra practice.
+              You can see <a href="Lab06/flexbox.html">the flexbox page</a>.</p>
+          </article>
+          <article id="Lab07" class="window assignmentbox">
+            <h3 class="titlebar">Lab 07: Masonry</h3>
+            <p>Lab 07 consists of more practice with flexboxes. We recreate a page according to a short video showcase.
+              The page consists of a side bar and random photos, which tile like masonry, with a fixed height and a
+              flexible width.
+              You can see <a href="Lab07/masonry.html">the masonry page</a>.</p>
+          </article>
+          <article id="Lab08" class="window assignmentbox">
+            <h3 class="titlebar">Lab 08: Position</h3>
+            <p>Lab 08 consists of practice with position types and their usage, to modify a skeleton of a basic checkout
+              page with various positions and centering, to match some described behavior.
+              You can see <a href="Lab08/position.html">the checkout page</a>.</p>
+          </article>
+          <article id="Lab09" class="window assignmentbox">
+            <h3 class="titlebar">Lab 09: Media Query</h3>
+            <p>Lab 09 consists of basic practice with media queries, given a webpage we must use media queries to make
+              the page behave as it does in a video.
+              You can see <a href="Lab09/mediaquery.html">the media query page</a>.</p>
+          </article>
+          <article id="Lab10" class="window assignmentbox">
+            <h3 class="titlebar">Lab 10: Tip Calculator</h3>
+            <p>Lab 10 consists of an intro to js, creating a basic tip calculator which tells the user to correct
+              inputs.
+              You can see <a href="Lab10/js.html">the tip calculator</a>.</p>
+          </article>
+          <article id="Lab11" class="window assignmentbox">
+            <h3 class="titlebar">Lab 11: Mouse Events</h3>
+            <p>Lab 11 consists of an intro to mouse events, in which we add mouse events to make a button change colors
+              and text.
+              You can see <a href="Lab11/mouseevent.html">the mouse events page</a>.</p>
+          </article>
+          <article id="Lab12" class="window assignmentbox">
+            <h3 class="titlebar">Lab 12: Greeting and Calculator</h3>
+            <p>Lab 12 consists of an intro to forms, in which we are asked to create a page which can greet you, and can
+              do basic arithmetic with two numbers.
+              You can see <a href="Lab12/greetingcalc.html">the greeting and calculator page</a>.</p>
+          </article>
+          <article id="Lab13" class="window assignmentbox">
+            <h3 class="titlebar">Lab 13: Arrays and Objects</h3>
+            <p>Lab 13 consists of an intro to arrays and looping in javascript, where we are given a list and asked to
+              use different loops and functions to complete tasks.
+              You can see <a href="Lab13/arrays.js">the raw js for the arrays lab</a>.</p>
+          </article>
+          <article id="Lab14" class="window assignmentbox">
+            <h3 class="titlebar">Lab 14: API</h3>
+            <p>Lab 14 consists of an intro to async functions, promises, and fetching from api's. We fetch user data
+              from an example api, and display a simple profile on the page.
+              You can see <a href="Lab14/api.html">the API profile page</a>.</p>
+          </article>
+          <article id="Lab15" class="window assignmentbox">
+            <h3 class="titlebar">Lab 15: Review</h3>
+            <p>Lab 15 consists of a review of API's, Asynchronous Functions, and general js. We fetch data, and filter,
+              access, and display the fetched data in multiple ways provided by the user.
+              You can see <a href="Lab15/review.html">the review page</a>.</p>
+          </article>
+          <article id="Lab16" class="window assignmentbox">
+            <h3 class="titlebar">Lab 16: Forms and Password Real-Time Validation</h3>
+            <p>Lab 16 is review of forms, as well as an intro to RegEx, and classList toggles for conditional formatting.
+              We are asked to create a form which accepts a name, valid email, and password matching some basic
+              requirements. The password requirements indicate their completion with conditional coloring. The form, if
+              all requirements are completed, redirects you to a success page.
+              You can see <a href="Lab16/form.html">the password validation form</a>.</p>
+          </article>
+        </div>
+      </details>
+    </section>
+
+    <section id="homework" class="window group homework" aria-labelledby="homework-heading">
+      <details open>
+        <summary class="titlebar"><h2 id="homework-heading">Homework</h2></summary>
+        <div class="assignments">
+          <article id="HW01" class="window assignmentbox">
+            <h3 class="titlebar">Homework 01: Github Workflow</h3>
+            <p>
+              HW 01 consists of using git locally to create a branch, make these changes, merge back into main, before
+              pushing back to github.
+              I then explain the following in my own words, to demonstrate basic awareness of git.
+            </p>
+            <dl>
+              <dt>repo</dt>
+              <dd>a project folder with changes tracked in git</dd>
+              <dt>clone</dt>
+              <dd>making a full copy of an existing repo</dd>
+              <dt>branch</dt>
+              <dd>a version of the software, can be used for making changes off main</dd>
+              <dt>commit</dt>
+              <dd>a snapshot of changes</dd>
+              <dt>push</dt>
+              <dd>moving local commits to a central repo; github</dd>
+              <dt>pull</dt>
+              <dd>moving central repo commits to your local git</dd>
+              <dt>pull request</dt>
+              <dd>a request to merge branches, subject to review</dd>
+              <dt>merge</dt>
+              <dd>combining commits from one branch into another</dd>
+            </dl>
+          </article>
+          <article id="HW02" class="window assignmentbox">
+            <h3 class="titlebar">Homework 02: Practice with CSS</h3>
+            <p>HW 02 consists of more practice with css, made up of the three following tasks</p>
+            <ul>
+              <li><a href="HW02/task1.html">Task 1</a> consists of recreating a deeply nested grocery list from a
+                screenshot.
+              </li>
+              <li><a href="HW02/debug1.html">Task 2</a> consists of debugging deliberately broken html, so that it
+                passes the
+                <a href="https://validator.w3.org/nu/#file">Nu html checker</a>
+              </li>
+              <li><a href="HW02/task3.html">Task 3</a> consists of recreating the styling and structure of a webpage
+                from a screenshot and provided plaintext.</li>
+            </ul>
+          </article>
+          <article id="HW03" class="window assignmentbox">
+            <h3 class="titlebar">Homework 03: Box Model</h3>
+            <p>HW 03 consists of more practice with css, made up of the two following tasks</p>
+            <ul>
+              <li><a href="HW03/index.html">Task 1</a> consists of styling a webpage according to a screenshot.</li>
+              <li><a href="HW03/letters.html">Task 2</a> consists of writing three letters with div boxes. I chose the
+                word HIT for it's letters made of straight lines</li>
+            </ul>
+          </article>
+          <article id="HW04" class="window assignmentbox">
+            <h3 class="titlebar">Homework 04: Flexbox</h3>
+            <p>HW 04 consists of flexbox practice, made up of three tasks. </p>
+            <ul>
+              <li>Task 1 asks us to complete <a href="https://flexboxfroggy.com/">Flexbox Froggy</a>, a flexbox
+                practice game.</li>
+              <li><a href="HW04/task2.html">Task 2</a> consists of creating a pyramid of images that scales with page
+                width
+              </li>
+              <li><a href="HW04/task3.html">Task 3</a> consists of styling a page showing the oscar winners, given some
+                html and a screenshot of the desired result</li>
+            </ul>
+          </article>
+          <article id="HW05" class="window assignmentbox">
+            <h3 class="titlebar">Homework 05: Media Query</h3>
+            <p>HW 05 consists of practice with CSS, and practice with media queries</p>
+            <ul>
+              <li><a href="HW05/task1.html">Task 1</a> asks us to create a pricing grid which matches a given photo.
+              </li>
+              <li><a href="HW05/task2.html">Task 2</a> asks us to use media queries to make a given page match
+                behavior shown in a video
+              </li>
+            </ul>
+          </article>
+          <article id="HW06" class="window assignmentbox">
+            <h3 class="titlebar">Homework 06: DOM, Arrays and Objects</h3>
+            <p>HW 06 consists of practice with js and its arrays and objects.</p>
+            <ul>
+              <li><a href="HW06/task1.html">Task 1</a> asks us to add a script to a page to allow for a simple math
+                game, where two numbers are generated and a user is asked to add them.</li>
+              <li><a href="HW06/task2.html">Task 2</a> asks us to write some js on an html page, to log things in the
+                console and
+                manipulate an <a href="HW06/task2.js">array of objects</a>.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </details>
+    </section>
+
+    <section id="projects" class="window group projects" aria-labelledby="projects-heading">
+      <details open>
+        <summary class="titlebar"><h2 id="projects-heading">Projects</h2></summary>
+        <div class="assignments">
+          <article id="P01" class="window assignmentbox">
+            <h3 class="titlebar">Project 01: Static Webpage</h3>
+            <p>In Project 1, we are asked to create a static website with five pages, with real content, rather than
+              examples or lorem ipsum. It must also have a consistent design language, and must carry a different
+              structure on each page, alongside some more specific requirements such as the use of some media queries,
+              at least two fonts, different positioning schemes, et cetera. I decided to make this site a personal site,
+              with pages for some of my interests and activites over the past couple of years. The site is written
+              entirely by hand, without the assistance of AI, and may contain mistakes, errors, and may not be entirely
+              up to date. You can view <a href="Project01/index.html">my Project 1 site</a>.</p>
+          </article>
+        </div>
+      </details>
+    </section>
   </main>
 
   <footer>
-    You can contact me on <a href="https://www.linkedin.com/in/kb-huber/">Linkedin</a>, or by sending me an e-mail at <a
-      href="mailto:huber2kb@dukes.jmu.edu">huber2kb@dukes.jmu.edu</a>. You can also view my (mostly inactive) <a
-      href="https://github.com/KBHuber">GitHub.</a>
+    <address>
+      You can contact me on <a href="https://www.linkedin.com/in/kb-huber/">Linkedin</a>, or by sending me an e-mail
+      at <a href="mailto:huber2kb@dukes.jmu.edu">huber2kb@dukes.jmu.edu</a>. You can also view my (mostly inactive)
+      <a href="https://github.com/KBHuber">GitHub</a>.
+    </address>
   </footer>
+
+  <script>
+    // highlight the card nav links to, clear on collapse
+    function clearActive() {
+      document.querySelectorAll(".assignmentbox.active").forEach((card) => card.classList.remove("active"));
+    }
+
+    function activateFromHash() {
+      clearActive();
+      const card = location.hash && document.getElementById(location.hash.slice(1));
+      if (!card || !card.classList.contains("assignmentbox")) return;
+      card.classList.add("active");
+      const group = card.closest("details");
+      if (group && !group.open) {
+        group.open = true;
+        card.scrollIntoView();
+      }
+    }
+
+    document.querySelectorAll(".group summary").forEach((summary) => {
+      summary.addEventListener("click", () => {
+        clearActive();
+        history.replaceState(null, "", location.pathname + location.search);
+      });
+    });
+
+    window.addEventListener("hashchange", activateFromHash);
+    activateFromHash();
+  </script>
 
 </body>
 
