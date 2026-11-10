@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+  <style>
+    .valid {
+      color: green;
+    }
+
+    .invalid {
+      color: red;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .hide {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <form id='form'>
+    <input type='text' id='name' required='true' placeholder='Enter Name'>
+    <input type='email' id='email' required='true' placeholder='Enter Email'>
+    <input type='password' id='password' required='true' placeholder='Enter Password'>
+    <button type='submit'>submit</button>
+    <ul id="rules" class="hide">
+      <li id='pwLength'>At least 6 characters</li>
+      <li id='pwSpecial'>Must include a special character (!@#$)</li>
+      <li id='pwCaps'>Must include an uppercase letter (A-Z)</li>
+    </ul>
+  </form>
+  <script>
+    let length = 0;
+    let special = 0;
+    let upperCase = 0;
+    const password = document.getElementById('password');
+    const pwLength = document.getElementById('pwLength');
+    const pwCaps = document.getElementById('pwCaps');
+    const pwSpecial = document.getElementById('pwSpecial');
+    const rules = document.getElementById('rules');
+    document.getElementById('form').addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (length && special && upperCase) {
+        window.location.href = "success.html"
+      }
+    })
+
+    document.getElementById('password').addEventListener('input', () => {
+      rules.className = 'show';
+
+      length = password.value.length >= 6;
+      special = /[!@#$%^&*(),.?":{}|<>]/.test(password.value);
+      upperCase = /[A-Z]/.test(password.value);
+
+      pwLength.classList.toggle('valid', length);
+      pwLength.classList.toggle('invalid', !length);
+      pwSpecial.classList.toggle('valid', special);
+      pwSpecial.classList.toggle('invalid', !special);
+      pwCaps.classList.toggle('valid', upperCase);
+      pwCaps.classList.toggle('invalid', !upperCase);
+    })
+  </script>
+</body>
+
+</html>
